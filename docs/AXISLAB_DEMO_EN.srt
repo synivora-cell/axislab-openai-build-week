@@ -1,0 +1,104 @@
+1
+00:00:00,000 --> 00:00:07,000
+Robotics students often memorize transformations
+without seeing what the symbols do.
+
+2
+00:00:07,000 --> 00:00:14,000
+AxisLab turns equations into verified lessons
+where students predict, manipulate, observe, and check.
+
+3
+00:00:14,000 --> 00:00:21,000
+Six modules connect robot motion,
+coordinate systems, orientation, velocity, and forces.
+
+4
+00:00:21,000 --> 00:00:29,000
+The direct robot demonstration is deterministic
+and requires no external model call.
+
+5
+00:00:29,000 --> 00:00:37,000
+Changing d1 translates along its joint axis,
+while theta2 rotates the downstream chain.
+
+6
+00:00:37,000 --> 00:00:45,000
+The 3D model, DH table, matrices,
+and end-effector position update together.
+
+7
+00:00:45,000 --> 00:00:53,000
+The RPY and Euler wrist can be rotated with the mouse
+and controlled with three live angle sliders.
+
+8
+00:00:53,000 --> 00:01:01,000
+Learners compare rotation conventions,
+recover inverse angles, and inspect singularities.
+
+9
+00:01:01,000 --> 00:01:09,000
+Coordinate, Jacobian, trajectory, and dynamics labs
+use the same active-learning interface.
+
+10
+00:01:09,000 --> 00:01:17,000
+Each lesson combines visible geometry,
+equations, controls, and scored questions.
+
+11
+00:01:17,000 --> 00:01:25,000
+Natural-language questions can request
+a customized advanced robotics lesson.
+
+12
+00:01:25,000 --> 00:01:33,000
+The model proposes teaching intent,
+difficulty, and bounded starting parameters.
+
+13
+00:01:33,000 --> 00:01:41,000
+Deterministic code validates the result
+and owns numerical answers and scoring.
+
+14
+00:01:41,000 --> 00:01:49,000
+Generated code is never executed,
+and provider failures activate reviewed fallback lessons.
+
+15
+00:01:49,000 --> 00:01:58,000
+Codex helped analyze the system,
+plan the architecture, and implement the learning modules.
+
+16
+00:01:58,000 --> 00:02:07,000
+It supported mathematical review, automated tests,
+responsive design, debugging, and deployment migration.
+
+17
+00:02:07,000 --> 00:02:17,000
+[Replace this subtitle with the exact, verified way
+GPT-5.6 contributed to the final project.]
+
+18
+00:02:17,000 --> 00:02:25,000
+Twenty-one backend tests and twenty frontend tests
+verify the current implementation.
+
+19
+00:02:25,000 --> 00:02:34,000
+The public HTTPS demo requires no account,
+and direct lessons remain available without an AI provider.
+
+20
+00:02:34,000 --> 00:02:43,000
+AxisLab makes difficult robotics mathematics
+visible, interactive, and verifiable.
+
+21
+00:02:43,000 --> 00:02:51,000
+It is a safer foundation for active,
+AI-assisted robotics education.

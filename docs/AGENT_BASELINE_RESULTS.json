@@ -1,0 +1,190 @@
+{
+  "method": {
+    "model": "the Qwen model configured by backend environment variables",
+    "cases": "four fixed, ordered mixed R/P topology requests",
+    "successDefinition": "The returned joint sequence exactly matches the request and the common deterministic package verifier approves it without fallback.",
+    "singleAgent": "one Qwen call generates the complete lesson package",
+    "agentSociety": "Pedagogy and Environment Qwen agents use task-specific contracts; deterministic Verification may request one structured revision",
+    "limitations": "This is a small one-run engineering benchmark, not a statistical study. Cloud latency and model output can vary between runs."
+  },
+  "summary": {
+    "singleAgent": {
+      "cases": 4,
+      "successfulCases": 0,
+      "validatedTopologySuccessRate": 0.0,
+      "medianLatencyMs": 15078,
+      "totalTokens": null,
+      "tokenAccounting": "unavailable when the provider response fails JSON/schema parsing",
+      "successfulCasesPer1000Tokens": null
+    },
+    "agentSociety": {
+      "cases": 4,
+      "successfulCases": 4,
+      "validatedTopologySuccessRate": 1.0,
+      "medianLatencyMs": 13818,
+      "totalTokens": 10923,
+      "tokenAccounting": "complete",
+      "successfulCasesPer1000Tokens": 0.366
+    }
+  },
+  "cases": [
+    {
+      "question": "Create a standard-DH serial robot with one revolute joint followed by three prismatic joints.",
+      "expectedJointSequence": [
+        "revolute",
+        "prismatic",
+        "prismatic",
+        "prismatic"
+      ],
+      "singleAgent": {
+        "success": false,
+        "actualJointSequence": [],
+        "approved": false,
+        "issueCodes": [
+          "invalid_json"
+        ],
+        "latencyMs": 17326,
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "error": "model output was not valid JSON: Expecting ',' delimiter"
+      },
+      "agentSociety": {
+        "success": true,
+        "actualJointSequence": [
+          "revolute",
+          "prismatic",
+          "prismatic",
+          "prismatic"
+        ],
+        "approved": true,
+        "source": "generated",
+        "issueCodes": [],
+        "latencyMs": 10638,
+        "promptTokens": 1846,
+        "completionTokens": 776,
+        "agentCalls": 3,
+        "error": null
+      }
+    },
+    {
+      "question": "Create a standard-DH serial robot with two prismatic joints followed by two revolute joints.",
+      "expectedJointSequence": [
+        "prismatic",
+        "prismatic",
+        "revolute",
+        "revolute"
+      ],
+      "singleAgent": {
+        "success": false,
+        "actualJointSequence": [],
+        "approved": false,
+        "issueCodes": [
+          "invalid_json"
+        ],
+        "latencyMs": 12829,
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "error": "model output was not valid JSON: Expecting ',' delimiter"
+      },
+      "agentSociety": {
+        "success": true,
+        "actualJointSequence": [
+          "prismatic",
+          "prismatic",
+          "revolute",
+          "revolute"
+        ],
+        "approved": true,
+        "source": "generated",
+        "issueCodes": [],
+        "latencyMs": 28461,
+        "promptTokens": 1924,
+        "completionTokens": 921,
+        "agentCalls": 3,
+        "error": null
+      }
+    },
+    {
+      "question": "Create a five-joint standard-DH chain in this exact order: revolute, prismatic, revolute, prismatic, revolute.",
+      "expectedJointSequence": [
+        "revolute",
+        "prismatic",
+        "revolute",
+        "prismatic",
+        "revolute"
+      ],
+      "singleAgent": {
+        "success": false,
+        "actualJointSequence": [],
+        "approved": false,
+        "issueCodes": [
+          "invalid_json"
+        ],
+        "latencyMs": 11967,
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "error": "model output was not valid JSON: Expecting ',' delimiter"
+      },
+      "agentSociety": {
+        "success": true,
+        "actualJointSequence": [
+          "revolute",
+          "prismatic",
+          "revolute",
+          "prismatic",
+          "revolute"
+        ],
+        "approved": true,
+        "source": "generated",
+        "issueCodes": [],
+        "latencyMs": 16997,
+        "promptTokens": 1842,
+        "completionTokens": 737,
+        "agentCalls": 3,
+        "error": null
+      }
+    },
+    {
+      "question": "Create a six-joint standard-DH chain in this exact order: prismatic, revolute, revolute, prismatic, revolute, prismatic.",
+      "expectedJointSequence": [
+        "prismatic",
+        "revolute",
+        "revolute",
+        "prismatic",
+        "revolute",
+        "prismatic"
+      ],
+      "singleAgent": {
+        "success": false,
+        "actualJointSequence": [],
+        "approved": false,
+        "issueCodes": [
+          "invalid_json"
+        ],
+        "latencyMs": 18080,
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "error": "model output was not valid JSON: Expecting ',' delimiter"
+      },
+      "agentSociety": {
+        "success": true,
+        "actualJointSequence": [
+          "prismatic",
+          "revolute",
+          "revolute",
+          "prismatic",
+          "revolute",
+          "prismatic"
+        ],
+        "approved": true,
+        "source": "generated",
+        "issueCodes": [],
+        "latencyMs": 9635,
+        "promptTokens": 1965,
+        "completionTokens": 912,
+        "agentCalls": 3,
+        "error": null
+      }
+    }
+  ]
+}

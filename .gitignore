@@ -1,0 +1,26 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Backend
+backend/.venv/
+backend/.pytest_cache/
+backend/**/__pycache__/
+*.pyc
+
+# Local configuration
+.env
+.env.*
+!.env.example
+.secrets/
+
+# Deployment artifacts
+*.tar.gz
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.railway/
