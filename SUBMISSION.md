@@ -97,9 +97,11 @@ The Build Week extension added real scoring, direct robot controls, advanced rob
 modules, AI-customized lesson generation, deterministic advanced-math verification,
 responsive global navigation, Railway deployment, and expanded automated tests.
 
-The final Devpost entry must add the primary `/feedback` Codex Session ID and an exact,
-verifiable description of how GPT-5.6 contributed. Do not replace this disclosure with
-an unsupported claim.
+The primary local Codex build task records `gpt-5.6-sol` as its model and has task ID
+`019f80ac-f636-7fb3-a5e0-c60d5680d9e2`. GPT-5.6 Sol supported the advanced module
+architecture, robotics-math review, real scoring, responsive interface, Railway
+migration, testing, and release audit. The final Devpost form should use the Session ID
+returned by the required `/feedback` workflow for this task.
 
 ## Demonstration video
 

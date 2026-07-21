@@ -1,104 +1,109 @@
 1
-00:00:00,000 --> 00:00:07,000
-Robotics students often memorize transformations
-without seeing what the symbols do.
+00:00:00,000 --> 00:00:08,000
+Robotics students often memorize equations
+without seeing what the symbols actually do.
 
 2
-00:00:07,000 --> 00:00:14,000
-AxisLab turns equations into verified lessons
-where students predict, manipulate, observe, and check.
+00:00:08,000 --> 00:00:16,000
+AxisLab turns those equations into verified,
+interactive robotics lessons.
 
 3
-00:00:14,000 --> 00:00:21,000
-Six modules connect robot motion,
-coordinate systems, orientation, velocity, and forces.
+00:00:16,000 --> 00:00:24,000
+Six modules connect motion and coordinates
+with orientation, velocity, paths, and forces.
 
 4
-00:00:21,000 --> 00:00:29,000
-The direct robot demonstration is deterministic
-and requires no external model call.
+00:00:24,000 --> 00:00:32,000
+The direct robot lesson works without AI
+and provides a reproducible starting point.
 
 5
-00:00:29,000 --> 00:00:37,000
+00:00:32,000 --> 00:00:40,000
 Changing d1 translates along its joint axis,
 while theta2 rotates the downstream chain.
 
 6
-00:00:37,000 --> 00:00:45,000
-The 3D model, DH table, matrices,
+00:00:40,000 --> 00:00:48,000
+The 3D robot, DH table, matrices,
 and end-effector position update together.
 
 7
-00:00:45,000 --> 00:00:53,000
-The RPY and Euler wrist can be rotated with the mouse
-and controlled with three live angle sliders.
+00:00:48,000 --> 00:00:56,000
+Students predict first, manipulate the model,
+and then answer questions with real scoring.
 
 8
-00:00:53,000 --> 00:01:01,000
-Learners compare rotation conventions,
-recover inverse angles, and inspect singularities.
+00:00:56,000 --> 00:01:04,000
+Cartesian, cylindrical, and spherical lessons
+show coordinate conversion through motion.
 
 9
-00:01:01,000 --> 00:01:09,000
-Coordinate, Jacobian, trajectory, and dynamics labs
-use the same active-learning interface.
+00:01:04,000 --> 00:01:12,000
+The RPY and Euler wrist responds to the mouse
+and controlled with three live angle sliders.
 
 10
-00:01:09,000 --> 00:01:17,000
-Each lesson combines visible geometry,
-equations, controls, and scored questions.
+00:01:12,000 --> 00:01:20,000
+Learners compare rotation conventions,
+recover angles and spot singularities.
 
 11
-00:01:17,000 --> 00:01:25,000
-Natural-language questions can request
-a customized advanced robotics lesson.
+00:01:20,000 --> 00:01:28,000
+The Jacobian lab maps joint rates
+to tool velocity and reveals rank loss.
 
 12
-00:01:25,000 --> 00:01:33,000
-The model proposes teaching intent,
-difficulty, and bounded starting parameters.
+00:01:28,000 --> 00:01:36,000
+Trajectory and dynamics labs reveal profiles,
+joint forces, and gravity compensation.
 
 13
-00:01:33,000 --> 00:01:41,000
-Deterministic code validates the result
-and owns numerical answers and scoring.
+00:01:36,000 --> 00:01:44,000
+A natural-language question can also request
+a customized advanced robotics lesson.
 
 14
-00:01:41,000 --> 00:01:49,000
-Generated code is never executed,
-and provider failures activate reviewed fallback lessons.
+00:01:44,000 --> 00:01:52,000
+The model proposes goals and difficulty,
+misconceptions, and bounded parameters.
 
 15
-00:01:49,000 --> 00:01:58,000
-Codex helped analyze the system,
-plan the architecture, and implement the learning modules.
+00:01:52,000 --> 00:02:00,000
+Deterministic code validates every parameter
+and owns the numerical answers and scoring.
 
 16
-00:01:58,000 --> 00:02:07,000
-It supported mathematical review, automated tests,
-responsive design, debugging, and deployment migration.
+00:02:00,000 --> 00:02:08,000
+Generated code is never executed,
+and failures load reviewed fallback lessons.
 
 17
-00:02:07,000 --> 00:02:17,000
-[Replace this subtitle with the exact, verified way
-GPT-5.6 contributed to the final project.]
+00:02:08,000 --> 00:02:17,000
+Codex was my partner for architecture,
+React, Three.js, FastAPI, tests, and release.
 
 18
-00:02:17,000 --> 00:02:25,000
-Twenty-one backend tests and twenty frontend tests
-verify the current implementation.
+00:02:17,000 --> 00:02:26,000
+It reviewed the robotics mathematics,
+debugged interaction and unified the UI.
 
 19
-00:02:25,000 --> 00:02:34,000
-The public HTTPS demo requires no account,
-and direct lessons remain available without an AI provider.
+00:02:26,000 --> 00:02:35,000
+The primary build session used GPT-5.6 Sol
+inside Codex for the final project extension.
 
 20
-00:02:34,000 --> 00:02:43,000
-AxisLab makes difficult robotics mathematics
-visible, interactive, and verifiable.
+00:02:35,000 --> 00:02:43,000
+It supported advanced lessons and scoring,
+responsive design, and Railway release audit.
 
 21
-00:02:43,000 --> 00:02:51,000
-It is a safer foundation for active,
-AI-assisted robotics education.
+00:02:43,000 --> 00:02:50,000
+Twenty-one backend and twenty frontend tests
+verify the current implementation.
+
+22
+00:02:50,000 --> 00:02:56,000
+AxisLab makes robotics mathematics
+visible, interactive, and verifiable.

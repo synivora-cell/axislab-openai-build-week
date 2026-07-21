@@ -108,10 +108,12 @@ The project was meaningfully extended during the submission period with:
 
 Codex was used as the implementation partner for repository analysis, architecture
 decisions, mathematical review, React/Three.js development, FastAPI contracts, tests,
-responsive design, deployment migration, and submission preparation. The Devpost entry
-must include the `/feedback` Session ID for the primary Codex task and accurately state
-where GPT-5.6 was used; this repository does not invent model-use evidence that has not
-been independently verified.
+responsive design, deployment migration, and submission preparation. The primary local
+build task records `gpt-5.6-sol` as its model and has task ID
+`019f80ac-f636-7fb3-a5e0-c60d5680d9e2`. GPT-5.6 Sol contributed to the advanced lesson
+architecture, robotics-math review, real scoring, responsive interface, Railway
+migration, testing, and release audit. The final Devpost form should use the Session ID
+returned by the required `/feedback` workflow for this task.
 
 ## Repository layout
 

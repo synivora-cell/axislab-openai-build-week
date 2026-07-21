@@ -1,8 +1,8 @@
 # AxisLab Three-Minute Demo Script
 
 The final video must be public on YouTube, no longer than three minutes, and include
-voiceover. Replace the bracketed GPT-5.6 sentence only with a claim you can verify from
-the actual Codex session or runtime integration.
+voiceover. The model statement below is supported by the primary local Codex task
+record, which identifies the session model as `gpt-5.6-sol`.
 
 ## 0:00–0:20 — Problem and solution
 
@@ -47,8 +47,9 @@ task. Use a specific explanation instead of saying only that AI wrote the code.
 > the React and FastAPI changes, review robotics mathematics, write tests, debug the
 > responsive interface, and migrate deployment.
 
-> [State exactly which part used GPT-5.6, what decision or implementation it contributed,
-> and what repository or session evidence supports that statement.]
+> The primary build session used GPT-5.6 Sol inside Codex. It supported the advanced
+> lesson architecture, robotics-math review, real scoring, responsive interface,
+> Railway migration, testing, and final release audit.
 
 ## 2:35–2:55 — Reliability and impact
 
