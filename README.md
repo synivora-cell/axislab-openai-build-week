@@ -1,3 +1,5 @@
+<img width="2532" height="1300" alt="photo_5980916331517251776_w (1)" src="https://github.com/user-attachments/assets/27bce7b1-76a6-4532-b464-9c5cce038bca" />
+
 # AxisLab
 
 **A verified, interactive robotics tutor for the OpenAI Build Week Education track.**
